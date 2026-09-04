@@ -9,3 +9,4 @@ https://svgomg.net/ --> Utilizei para vetorizar algumas imagens <br>
 https://fonts.google.com/ --> Utilizei para pegar as fontes de texto <br>
 https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ --> Utilizei para pegar o background da pagina <br>
 https://getbootstrap.com/docs/5.3/components/carousel/  --> Utilizei a documentação da biblioteca bootstrap para fazer o carrossel <br>
+https://fontawesome.com/  --> Utilizei para pegar algumas logos
