@@ -1,0 +1,250 @@
+:root {
+    --background-color: #faf5e9;
+    --text-color: #173C3A;
+    --elements-color: #D79A3B;
+    --secundary-color: #EEEEEE;
+    --white-color: #FFFF;
+    --gap: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 13rem;
+}
+
+h1 {
+    font-size: 10rem;
+    font-family: "Caacupe One", sans-serif;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10rem;
+}
+
+h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    max-width: 100%;
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 15px 80px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--secundary-color);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+main {
+    padding-top: 13rem;
+    background-image: url("../image/pattern-randomized.svg");
+}
+
+section {
+    min-height: 100vh;
+}
+
+.menu button {
+    color: var(--background-color) !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0px 0px 0px var(--text-color);
+    box-shadow: 1px 1px 0px var(--text-color);
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0px solid var(--elements-color);
+    background: var(--text-color);
+  }
+
+.menu button:hover {
+    color: var(--white-color);
+    background: var(--elements-color);
+}
+
+.menu {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menu img {
+    width: 8%;
+    height: auto;
+}
+
+.menu ul {
+    display: flex;
+    text-align: center;
+    gap: var(--gap);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+
+    position: relative;
+    display: inline-block;
+
+    color: var(--text-color);
+    padding: 1rem 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--elements-color);
+
+    transition: width 300ms ease;
+}
+
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.title {
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    padding: 4rem5
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.carousel-box {
+    width: 50%;
+    max-width: 130rem;
+    margin: 4rem auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.n-img {
+    filter: brightness(0.7);
+} 
+
+.about-us {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.about-us h2 {
+    padding-bottom: 10%;
+}
+
+.about-us p {
+    font-size: 2.5rem;
+}
+
+.progamation {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.progamation h2 {
+    padding-bottom: 10%;
+}
+
+.progamation p {
+    font-size: 2.5rem;
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--text-color);
+    padding: 15px 0;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15); */
+    display: flex;
+    justify-content: space-between;
+    color: var(--background-color);
+}
+
+footer h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 40px;
+}
+
+.left {
+    width: 20%;
+    margin-right: 3%;
+    font-size: 2rem;
+}
+
+.left img {
+    width: 50%;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--secundary-color)
+}
+
+.center{
+    width: 30%;
+    text-align: center;
+}
+
+.center a {
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+.right {
+    width: 40%;
+    text-align: center;
+}
+
+
+.logos img{
+    width: 25%;
+    margin-right: 5%;
+    padding-left: 40px;
+}
