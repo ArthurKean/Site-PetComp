@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -64,11 +65,10 @@ section {
 }
 
 .menu button {
-    color: var(--background-color) !important;
+    color: var(--white-color);
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
-    font-weight: 900;
-    text-shadow: 0px 0px 0px var(--text-color);
+    font-weight: 800;
     box-shadow: 1px 1px 0px var(--text-color);
     padding: 10px 30px;
     border-radius: 10px;
@@ -91,24 +91,22 @@ section {
 }
 
 .menu img {
-    width: 8%;
+    width: 35%;
     height: auto;
 }
 
 .menu ul {
     display: flex;
     text-align: center;
-    gap: var(--gap);
+    gap: 10rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.menu a{
-
+.menu ul a{
     position: relative;
     display: inline-block;
-
     color: var(--text-color);
     padding: 1rem 0.5rem;
     font-family: "Montserrat", sans-serif;
@@ -117,36 +115,30 @@ section {
     text-decoration: none;
 }
 
-.menu a::after {
+.menu  ul a::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-
     width: 0;
     height: 0.3rem;
     background-color: var(--elements-color);
-
     transition: width 300ms ease;
 }
 
-
-.menu a:hover::after {
+.menu ul a:hover::after {
     width: 100%;
 }
 
 .title {
     color: var(--text-color);
-    display: block;
     text-align: center;
-    padding: 4rem5
-    margin: 1rem;
     text-transform: uppercase;
 }
 
 .carousel-box {
     width: 50%;
-    max-width: 130rem;
+    max-width: 200rem;
     margin: 4rem auto;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -156,39 +148,20 @@ section {
     filter: brightness(0.7);
 } 
 
-.about-us {
+.about-us, .progamation {
     max-width: 120rem;
     margin: 0 auto;
     padding: 8rem;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+    /* display: flex;
+    align-items: center center; */
     text-align: center;
 }
 
-.about-us h2 {
+.about-us h2, .progamation h2 {
     padding-bottom: 10%;
 }
 
-.about-us p {
-    font-size: 2.5rem;
-}
-
-.progamation {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 8rem;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.progamation h2 {
-    padding-bottom: 10%;
-}
-
-.progamation p {
+.about-us p, .progamation p {
     font-size: 2.5rem;
 }
 
@@ -196,11 +169,10 @@ section {
 footer {
     width: 100%;
     background-color: var(--text-color);
-    padding: 15px 0;
     padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
-    /* box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 -6px 4px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     color: var(--background-color);
@@ -209,12 +181,13 @@ footer {
 footer h2 {
     font-size: 3rem;
     margin-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
 }
 
 .left {
     width: 20%;
     margin-right: 3%;
+    margin-right: 0;
     font-size: 2rem;
 }
 
@@ -224,27 +197,57 @@ footer h2 {
 
 .left a {
     text-decoration: none;
-    color: var(--secundary-color)
+    color: var(--secundary-color);
+    transition: 0.3s;
+}
+
+.left a:hover {
+    color: var(--elements-color);
+    text-decoration: underline;
 }
 
 .center{
     width: 30%;
     text-align: center;
+    position: relative;
+    left: 5%;
 }
 
 .center a {
     text-decoration: none;
     color: var(--secundary-color);
+    transition: 0.3s;
+}
+
+.center a:hover {
+    color: var(--elements-color);
 }
 
 .right {
     width: 40%;
     text-align: center;
+    position: relative;
+    left: 5%;
 }
 
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
 .logos img{
-    width: 25%;
-    margin-right: 5%;
-    padding-left: 40px;
+    width: 20%;
+}
+
+.socials {
+    padding: 0 20%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials i {
+    font-size: 4rem;
 }
