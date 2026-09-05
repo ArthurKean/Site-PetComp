@@ -1,7 +1,9 @@
 ## Sobre o projeto
 
-Este projeto foi desenvolvido para o desafio **Pet**, com o objetivo de criar uma landing page simples e agradável. Aproveitei o desafio para praticar meus conhecimentos, aprender mais sobre 
-desenvolvimento web e melhorar minhas habilidades com HTML e CSS.
+Este projeto foi desenvolvido para o desafio **Pet**, com o objetivo de criar uma landing page simples. Aproveitei o desafio para praticar meus conhecimentos, aprender mais sobre 
+desenvolvimento web e melhorar minhas habilidades com HTML e CSS
+
+O ideal é abrir no desktop
 
 ## Ferramentas
 https://validator.w3.org/nu/#textarea  --> Utilizei para validar meu html <br>
