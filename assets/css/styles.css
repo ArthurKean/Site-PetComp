@@ -144,6 +144,11 @@ section {
     overflow: hidden;
 }
 
+.carousel-caption h2 {
+    font-size: 6rem;
+    
+}
+
 .n-img {
     filter: brightness(0.7);
 } 
